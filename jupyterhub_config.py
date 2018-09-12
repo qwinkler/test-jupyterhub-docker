@@ -7,7 +7,9 @@ c.JupyterHub.hub_ip = public_ips()[0]
 c.JupyterHub.port = 8000
 
 c.JupyterHub.spawner_class = 'dockerspawner.DockerSpawner'
-c.DockerSpawner.image = 'jupyterhub/singleuser:0.8'
+#c.DockerSpawner.image = 'jupyterhub/singleuser:0.8'
+c.DockerSpawner.image = 'jupyterhub/singleuser:0.9.1'
+#c.DockerSpawner.image = 'jupyterhub/singleuser:latest'
 
 c.Authenticator.whitelist = whitelist = set()
 c.Authenticator.admin_users = admin = set()
