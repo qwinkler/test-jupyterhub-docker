@@ -6,6 +6,7 @@ services:
     container_name: jupyterhub
     ports:
       - "8000:8000"
+      - "8081:8081"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:rw"
       - "./jupyterhub_config.py:/srv/jupyterhub/jupyterhub_config.py"

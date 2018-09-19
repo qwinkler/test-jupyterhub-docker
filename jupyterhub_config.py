@@ -8,8 +8,8 @@ c.JupyterHub.port = 8000
 
 c.JupyterHub.spawner_class = 'dockerspawner.DockerSpawner'
 #c.DockerSpawner.image = 'jupyterhub/singleuser:0.8'
-c.DockerSpawner.image = 'jupyterhub/singleuser:0.9.1'
-#c.DockerSpawner.image = 'jupyterhub/singleuser:latest'
+#c.DockerSpawner.image = 'jupyterhub/singleuser:0.9.1'
+c.DockerSpawner.image = 'jupyter/datascience-notebook:latest'
 
 c.Authenticator.whitelist = whitelist = set()
 c.Authenticator.admin_users = admin = set()
